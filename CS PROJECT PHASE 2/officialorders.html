@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr">  
+<head>
+    <title>Build Up Your Lawn</title>
+    <link rel="stylesheet" href="externalstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+  <source src="vids/gardenstockfootage.mp4" type="video/mp4">
+</video>
+    <div class="contenta">
+  <h1>Official Orders</h1>
+  <p>We accept official orders from all Government departments and councils, schools, local and higher education authorities, hospitals and health authorities, and approved credit accounts<br>Orders and enquiries to:<br>Philippines,<br>Mindanao,<br>South Cotabato,<br>Polomolok,<br>9504<br><br>Phone: (+63)921 524 1153<br>e-mail: gemarsensano@gmail.com</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+<script>
+    var video = document.getElementById("myVideo");
+
+
+var btn = document.getElementById("myBtn");
+
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+    </body>
